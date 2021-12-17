@@ -6,9 +6,45 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>부트스트랩 예제</title>
     <link rel="stylesheet" href="./css/bootstrap.css">
+    <style>
+        .components{width: 1000px; margin:30px auto;}
+        h2{margin:50px 10px 10px 0;}
+    </style>
 </head>
 <body>
-    <h2>버튼(Butten)</h2>
-    <button type="button" class="btn btn-primary">Primary</button>
+    <div class="components">
+        <h2>버튼(Button)</h2>
+            <button type="button" class="btn btn-primary">Primary</button>
+            <button type="button" class="btn btn-secondary">Secondary</button>
+            <button type="button" class="btn btn-success">Success</button>
+            <button type="button" class="btn btn-danger">Danger</button>
+
+        <h2>배지(Badge)</h2>
+        <h4>Example heading<span class="badge bg-secondary">new</span></h4>
+        <h5>Example heading<span class="badge bg-success">new</span></h5>
+        <h6>Example heading<span class="badge bg-danger">new</span></h6>
+
+        <button type="button" class="btn btn-primary position-relative">
+            Inbox
+            <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+              99+
+              <span class="visually-hidden">up</span>
+            </span>
+        </button>
+
+        <h2>카드(Card)</h2>
+        <div class="card">
+            <div class="card-body">
+                <p class="card-text">카드 본문 내의 일부 텍스트입니다.</p>
+            </div>
+        </div>
+
+        <div class="card my-3" style="width: 20rem;">  <!-- my-3 : margin (top/bottom), 1rem=16px-->
+            <div class="card-body">
+                <h5 class="card-title">카드 제목</h5>
+                <p class="card-text">카드 제목을 기반으로 하고 카드 콘텐츠의 대부분을 구성합니다.</p>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
